@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title></title>
+  </head>
+  <body>
+    <div class="container question1">
+      <h1>Сколько материков на планете?</h1>
+      <div class="col-12 border answer1">
+        <p>5</p>
+      </div>
+      <div class="col-12 border answer2">
+        <p>6</p>
+      </div>
+      <div class="col-12 border answer3">
+        <p>3</p>
+      </div>
+    </div>
+    
+    <div class="container question2" style="display: none;">
+      <h1>Сколько планет в солнечной системе?</h1>
+      <div class="col-12 border answer4">
+        <p>9</p>
+      </div>
+      <div class="col-12 border answer5">
+        <p>7</p>
+      </div>
+      <div class="col-12 border answer6">
+        <p>8</p>
+      </div>
+    </div>
+
+    <div class="container question3" style="display: none;">
+      <img src="turing.jpg">
+      <h1>Что изображено на фото?</h1>
+      <div class="col-12 border answer7">
+        <p>сервер</p>
+      </div>
+      <div class="col-12 border answer8">
+        <p>квантовый компьютер</p>
+      </div>
+      <div class="col-12 border answer9">
+        <p>МТ</p>
+      </div>
+    </div>
+
+     <div class="container question4" style="display: none;">
+      <h1>Кто является атором романов «Метро 2033» и «Метро 2034», романов-антиутопий «Метро 2035»</h1>
+      <div class="col-12 border answer10">
+        <p>Дмитрий Глуховский</p>
+      </div>
+      <div class="col-12 border answer11">
+        <p>Михаил Зубенко</p>
+      </div>
+      <div class="col-12 border answer12">
+        <p>Сергей Иванов</p>
+      </div>
+    </div>
+      
+    <div class="container question5" style="display: none;">
+    	<audio controls>
+    		<source src="song.mp3" type="audio/ogg; codecs=vorbis">
+  		</audio>
+      <h1>Как называется песня?</h1>
+      <div class="col-12 border answer13">
+        <p>Fantasy</p>
+      </div>
+      <div class="col-12 border answer14">
+        <p>DejaVu</p>
+      </div>
+      <div class="col-12 border answer15">
+        <p>HYDRA</p>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script type="text/javascript">
+      document.querySelector(".answer1").onclick = function(){//первый вопрос
+        alert("Неверно!!")
+        }
+
+      document.querySelector(".answer2").onclick = function(){
+        alert("Правильно!");
+        document.querySelector(".question2").style.display = "block";
+        document.querySelector(".question1").style.display = "none";
+        }
+
+      document.querySelector(".answer3").onclick = function(){
+        alert("Неправильно!!")
+        }
+
+      document.querySelector(".answer4").onclick = function(){//второй вопрос
+        alert("Неверно!")
+        }
+
+      document.querySelector(".answer6").onclick = function(){
+        alert("Правильно!");
+        document.querySelector(".question2").style.display = "none";
+        document.querySelector(".question3").style.display = "block";
+        }
+
+      document.querySelector(".answer5").onclick = function(){
+        alert("Неправильно!")
+        }
+
+        document.querySelector(".answer7").onclick = function(){//третий вопрос
+        alert("Неверно!")
+        }
+
+      document.querySelector(".answer9").onclick = function(){
+        alert("Правильно! ");
+        document.querySelector(".question3").style.display = "none";
+        document.querySelector(".question4").style.display = "block";
+        }
+
+      document.querySelector(".answer8").onclick = function(){
+        alert("Неправильно!")
+        }
+      document.querySelector(".answer10").onclick = function(){//четвертый вопрос
+      	alert("Правильно!");
+      	document.querySelector(".question4").style.display = "none";
+      	document.querySelector(".question5").style.display = "block";
+      }
+       document.querySelector(".answer11").onclick = function(){
+        alert("Неправильно!")
+        }
+         document.querySelector(".answer12").onclick = function(){
+        alert("Неправильно!")
+        }
+
+         document.querySelector(".answer14").onclick = function(){//пятый вопрос
+      	alert("Правильно! ЕВРОБИИИИТ!!!");
+      	document.querySelector(".question1").style.display = "block";
+      	document.querySelector(".question5").style.display = "none";
+      }
+       document.querySelector(".answer13").onclick = function(){
+        alert("Неправильно!")
+        }
+         document.querySelector(".answer15").onclick = function(){
+        alert("Неправильно!")
+        }
+    </script>
+  </body>
+</html>
